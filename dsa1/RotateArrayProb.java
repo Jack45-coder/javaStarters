@@ -34,8 +34,8 @@ public class RotateArrayProb {
         int n = arr.length;
         k = k % n;
 
-        reverse(arr, 0, n-k);
-        reverse(arr, n-k+1, n-1);
+        reverse(arr, 0, k-1);
+        reverse(arr, k, n-1);
         reverse(arr, 0, n-1);
 
     }
@@ -43,7 +43,7 @@ public class RotateArrayProb {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter size of arr: ");
+        System.out.print("Enter size of arr: ");
         int n = sc.nextInt();
 
         int[] arr = new int[n];
