@@ -1,4 +1,4 @@
-package dsa1;
+package src.dsa1;
 import java.util.Scanner;
 
 public class EqualSumPartition{
